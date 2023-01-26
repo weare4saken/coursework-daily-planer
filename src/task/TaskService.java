@@ -1,14 +1,14 @@
-package tasks;
+package task;
 
-import tasks.byTime.*;
-import possibleExceptions.IncorrectArgumentException;
-import possibleExceptions.TaskNotFoundException;
-import typesOfTasks.Type;
+import task.time.*;
+import exception.IncorrectArgumentException;
+import exception.TaskNotFoundException;
+import types.Type;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
-import static possibleExceptions.CheckCorrectInput.*;
+import static exception.CheckCorrectInput.*;
 
 public class TaskService {
 
