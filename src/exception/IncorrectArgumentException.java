@@ -1,8 +1,6 @@
 package exception;
 
-import java.io.IOException;
-
-public class IncorrectArgumentException extends IOException {
+public class IncorrectArgumentException extends Exception {
 
 //    private final String argument;
 
