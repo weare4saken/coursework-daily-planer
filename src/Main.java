@@ -1,6 +1,13 @@
-public class Main {
-    public static void main(String[] args) {
+import possibleExceptions.IncorrectArgumentException;
+import possibleExceptions.TaskNotFoundException;
 
-        System.out.println("Hello world!");
+import static tasks.TaskService.*;
+
+public class Main {
+    public static void main(String[] args) throws IncorrectArgumentException, TaskNotFoundException {
+
+            startDailyPlanner();
     }
 }
+
+
