@@ -1,11 +1,11 @@
-package tasks.byTime;
+package task.time;
 
-import typesOfTasks.Type;
+import types.Type;
 
 import java.time.LocalDateTime;
 
-public class MonthlyTask extends Task {
-    public MonthlyTask(String title, String description, Type type, LocalDateTime dateTime) {
+public class YearlyTask extends Task {
+    public YearlyTask(String title, String description, Type type, LocalDateTime dateTime) {
         super(title, description, type, dateTime);
     }
 
@@ -13,12 +13,11 @@ public class MonthlyTask extends Task {
     public boolean appearsIn(LocalDateTime offerDate) {
         return offerDate.toLocalDate().equals(getDateTime().toLocalDate()) ||
                 offerDate.toLocalDate().isAfter(getDateTime().toLocalDate()) &&
-                offerDate.getDayOfMonth() == getDateTime().getDayOfMonth();
+                offerDate.getDayOfYear() == getDateTime().getDayOfYear();
     }
 
     @Override
     public LocalDateTime getDateRepeatTask(LocalDateTime localDateTime) {
-        return localDateTime.plusMonths(1);
+        return localDateTime.plusYears(1);
     }
-
 }

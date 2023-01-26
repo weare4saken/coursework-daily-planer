@@ -1,4 +1,4 @@
-package possibleExceptions;
+package exception;
 
 public class CheckCorrectInput {
     public static String checkStringCorrect(String string) throws IncorrectArgumentException {

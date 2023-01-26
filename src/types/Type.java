@@ -1,4 +1,4 @@
-package typesOfTasks;
+package types;
 
 public enum Type {
     PERSONAL(1, "Личная"),

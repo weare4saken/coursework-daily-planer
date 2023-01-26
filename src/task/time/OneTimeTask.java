@@ -1,6 +1,6 @@
-package tasks.byTime;
+package task.time;
 
-import typesOfTasks.Type;
+import types.Type;
 
 import java.time.LocalDateTime;
 
